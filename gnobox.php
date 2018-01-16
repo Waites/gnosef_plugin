@@ -3,7 +3,7 @@
    Plugin Name: GNOSEF Box Menu
    Plugin URI: http://
    Description: Creates shortcodes and settings menu for the box menu on GNOSEF site
-   Version: 2.1
+   Version: 2.3
    Author: Jesse Hobson
    Author URI: http://www.safyyrephrogg.com
    License: GPL2
@@ -21,7 +21,7 @@ include 'settings.php';
     return '
     <div class="one_third">
       <div class="clearfix gnobox gno" onclick="javascript:location.href=\''.$box1->link.'\';" style="cursor: pointer;">
-        <img class="gnoimg" src='.$box1->img.' />
+        <img class="gnoimg" src="'.$box1->img.'" />
         <div class="gnotext">
           <h4>'.$box1->title.'</h4>
           '.$box1->text.'
@@ -31,7 +31,7 @@ include 'settings.php';
 
     <div class="one_third">
       <div class="clearfix gnobox gno" onclick="javascript:location.href=\''.$box2->link.'\';" style="cursor: pointer;">
-        <img class="gnoimg" src='.$box2->img.' />
+        <img class="gnoimg" src="'.$box2->img.'" />
         <div class="gnotext">
           <h4>'.$box2->title.'</h4>
           '.$box2->text.'
@@ -41,7 +41,7 @@ include 'settings.php';
 
     <div class="one_third last">
       <div class="clearfix gnobox gno" onclick="javascript:location.href=\''.$box3->link.'\';" style="cursor: pointer;">
-        <img class="gnoimg" src='.$box3->img.' />
+        <img class="gnoimg" src="'.$box3->img.'" />
         <div class="gnotext">
           <h4>'.$box3->title.'</h4>
           '.$box3->text.'
